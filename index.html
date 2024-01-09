@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, 
+				initial-scale=1" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>GFG</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky" data-bs-theme="dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">OstadAnime</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true">Random</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn text-white" type="button" id="searchIcon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn text-white" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner -->
+
+    <section id="banner"
+        class="banner container-fluid d-md-flex justify-content-start align-items-center bg-dark-subtle p-4">
+        <div class="w-100 w-md-50 text-white">
+            <h1 class="fs-8 fs-md-4 fs-lg-3 text-white">Naruto</h1>
+            <div class="justify-content-left">
+                <p class="text-white">Just before Naruto Uzumaki was born, a colossal demon called the Kyuubi, also
+                    known as the Nine-Tailed Fox, invaded Konohagakure, the Hidden Leaf Village, causing chaos and
+                    destruction. To quell the Kyuubi's fury, the Fourth Hokage, the village leader, gave up his life and
+                    entrapped the monstrous creature inside the newborn Naruto.
+                    Presently, Naruto is a lively and dense ninja residing in Konohagakure. Excluded by his community
+                    because of the Kyuubi within him, Naruto grapples to establish his worth in the village. Despite
+                    this, his unyielding aspiration to lead Konohagakure as Hokage draws him towards making new
+                    companions and facing dangerous adversaries.</p>
+
+                <div class="d-flex">
+                    <a href="#" class="btn btnTheme me-2 text-white">Start Watching</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 py-5 text-center">
+        <h2 class="text-white mb-4 display-5">Enter Age</h2>
+        <input type="number" class="form-control w-50 mx-auto" placeholder="Enter your age">
+        <button class="btn btnTheme text-white btn-block w-50 mx-auto" onclick="submitAge()">Submit</button>
+    </section>
+
+    <div class="container card justify-content-start align-items-center w-50 mx-auto" id="underageCard"
+        style="display: none;">
+        <h2 class="text-white">You Are a Child</h2>
+        <img src="images/child.png" class="card-img-top" alt="UnderAge">
+        <div class="card-body">
+            <h5 class="card-title">Underage Card</h5>
+            <p class="card-text">Sorry, you are an underage kid. You don't belong here.</p>
+        </div>
+    </div>
+
+    <div class="container card justify-content-start align-items-center  w-50 mx-auto" id="adultCard"
+        style="display: none;">
+        <h2 class="d-flex text-white">You Are an Adult</h2>
+        <img src="images/Adult.jpg" class="card-img-top" alt="Adult">
+        <div class="card-body">
+            <h5 class="card-title">Adult Card</h5>
+            <p class="card-text">Welcome bro! You are 18 or older. You are among us.</p>
+        </div>
+    </div>
+
+
+    <section id="watch-animes" class="container my-5 py-5">
+        <h2 class="text-white mb-4 display-4 text-center">Watch Animes</h2>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/dragon_ball.jpg" class="card-img-top" alt="Dragon Ball">
+                    <div class="card-body">
+                        <h5 class="card-title">Dragon Ball</h5>
+                        <p class="card-text">Gokuu Son, a solitary youth, lives in the woods where he enjoys a peaceful
+                            existence until Bulma, a girl on a hunt for magical objects known as "Dragon Balls" that
+                            allegedly grant wishes to...</p>
+                        <a href="#" class="btn btnTheme text-white">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/dragon_ball.jpg" class="card-img-top" alt="Dragon Ball">
+                    <div class="card-body">
+                        <h5 class="card-title">Dragon Ball</h5>
+                        <p class="card-text">Gokuu Son, a solitary youth, lives in the woods where he enjoys a peaceful
+                            existence until Bulma, a girl on a hunt for magical objects known as "Dragon Balls" that
+                            allegedly grant wishes to...</p>
+                        <a href="#" class="btn btnTheme text-white">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/dragon_ball.jpg" class="card-img-top" alt="Dragon Ball">
+                    <div class="card-body">
+                        <h5 class="card-title">Dragon Ball</h5>
+                        <p class="card-text">Gokuu Son, a solitary youth, lives in the woods where he enjoys a peaceful
+                            existence until Bulma, a girl on a hunt for magical objects known as "Dragon Balls" that
+                            allegedly grant wishes to...</p>
+                        <a href="#" class="btn btnTheme text-white">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Navigation</h2>
+                        <ul>
+                            <li><a href="#">Browse Popular</a></li>
+                            <li><a href="#">Browse Simulcast</a></li>
+                            <li><a href="#">Release Calendar</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Games</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Account</h2>
+                        <ul>
+                            <li><a href="#">Create Account</a></li>
+                            <li><a href="#">Log in</a></li>
+                            <li><a href="#">Connect to MyAnimeList</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>OstadAnime</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2>Contact</h2>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Send your email"
+                                aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa fa-long-arrow-right"></i></span>
+                        </div>
+                        <h2>Follow us on</h2>
+                        <p class="socials">
+                            <i class="fas fa-facebook"></i>
+                            <i class="fab fa-dribbble"></i>
+                            <i class="fab fa-pinterest"></i>
+                            <i class="fab fa-twitter"></i>
+                          </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function submitAge() {
+            var age = parseInt(document.querySelector("input[type='number']").value);
+
+            if (isNaN(age)) {
+                alert("Please enter a valid number for age.");
+                return;
+            }
+
+            if (age < 18) {
+                document.getElementById('underageCard').style.display = 'block';
+                document.getElementById('adultCard').style.display = 'none';
+            } else {
+                document.getElementById('underageCard').style.display = 'none';
+                document.getElementById('adultCard').style.display = 'block';
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
